@@ -4,5 +4,5 @@ project(Operation_system C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(Operation_system
-        Lab_1_Operation_System.c
+        Operational_system_lab_1.c
 )

@@ -12,7 +12,7 @@ int main()
     memset(&si2, 0, sizeof(STARTUPINFO));
     si2.cb = sizeof(si2);
 
-    rc = CreateProcess(NULL, "child1.exe Tim", NULL, NULL, FALSE,
+    rc = CreateProcess(NULL, "child1.exe Jimmy", NULL, NULL, FALSE,
                        NORMAL_PRIORITY_CLASS, NULL, NULL, &si1, &pi1);
     if (!rc)
     {
@@ -23,7 +23,7 @@ int main()
     printf("Child1 process:\n");
     printf("hProcess=%d hThread=%d ProcessId=%ld ThreadId=%ld\n", pi1.hProcess, pi1.hThread, pi1.dwProcessId, pi1.dwThreadId);
     Sleep(100);
-    rc = CreateProcess(NULL, "child2.exe Jack", NULL, NULL, FALSE,
+    rc = CreateProcess(NULL, "child2.exe Vladick", NULL, NULL, FALSE,
                        NORMAL_PRIORITY_CLASS, NULL, NULL, &si2, &pi2);
     if (!rc)
     {
@@ -40,11 +40,11 @@ int main()
     for (int i=0; i<12; i++) {
         if(i == 7) {
             TerminateProcess(pi1.hProcess, 0);
-            printf("Child1 - Tim was killed\n");
+            printf("Child1 - Jimmy destroy\n");
         }
         if(i == 11) {
             TerminateJobObject(job, 0);
-            printf("Child2 - Jack was killed\n");
+            printf("Child2 - Vladick destroy\n");
         }
         printf("I am Parent... (my K=%d)\n", i);
         Sleep(1000);

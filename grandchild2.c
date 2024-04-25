@@ -4,7 +4,7 @@
 int main(int argc, char* argv[])
 {
     printf("\n");
-    printf("Hi this is Sebastian (grandhicld2)\n");
+    printf("Hi this is GrandIshak1 (grandhicld2)\n");
     Sleep(160);
     for (int i = 0; i < 15; i++)
     {

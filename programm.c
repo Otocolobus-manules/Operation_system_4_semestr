@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-TCHAR szName[] = TEXT("Главная");
+TCHAR szName[] = TEXT("Glavnaya");
 TCHAR vaName[] = TEXT("VMAlloc");
 LPCWSTR Semaphore = (LPCWSTR) "Семафор";
 

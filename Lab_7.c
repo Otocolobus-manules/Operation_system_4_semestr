@@ -8,10 +8,10 @@ HANDLE Semaphore, Semaphore2;
 CRITICAL_SECTION CriticalSection;
 int Delay1, Delay2;
 char Buffer[12];
-char names[3][14] = {
-        {"Maniliki))"},
-        {"Capybarick)))"},
-        {"ishachechek)))"}};
+char names[3][16] = {
+        {"Manuliki))"},
+        {"Capybarick))"},
+        {"ishachechek))"}};
 int n = 0;
 void SetWindow(int Width, int Height)
 {

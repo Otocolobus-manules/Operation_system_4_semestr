@@ -6,7 +6,7 @@
 
 TCHAR szName[] = TEXT("Glavnaya");
 TCHAR fMsg[] = TEXT("hello iz glavnoy");
-TCHAR szMsg[] = TEXT("soobshenie iz pervogo");
+TCHAR szMsg[] = TEXT("s pervogo");
 LPCWSTR Semaphore = (LPCWSTR) "Семафор";
 
 char AllocText[] = "abcdefghijklmno";

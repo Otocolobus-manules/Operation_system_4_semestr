@@ -1,8 +1,6 @@
 #include <windows.h>
-#include <process.h>
 #include <stdio.h>
 #include <conio.h>
-#include <time.h>
 
 HANDLE hthread[6], hsm, hsm1;
 char buffer[12], buff[12];
@@ -22,11 +20,11 @@ DWORD WINAPI Writer(void* n) {
     while (1) {
         WaitForSingleObject(hsm, 3000);
         if ((int)n == 3) {
-            strncpy(buff, "Novosibirsk", 12);
+            strncpy(buff, "Capybarickk", 12);
         } else if ((int)n == 4) {
-            strncpy(buff, "Ekaterinburg", 12);
+            strncpy(buff, "Manuuuuulick", 12);
         } else if ((int)n == 5) {
-            strncpy(buff, "Semipalatink", 12);
+            strncpy(buff, "Ishacheeeeek", 12);
         }
         for (i = 0; i <= 5; i++) {
             buffer[i] = buff[i];

@@ -20,11 +20,11 @@ DWORD WINAPI Writer(void* n) {
     while (1) {
         WaitForSingleObject(hsm, 3000);
         if ((int)n == 3) {
-            strncpy(buff, "Capybarickk", 12);
+            strncpy(buff, "Novosibirsk", 12);
         } else if ((int)n == 4) {
-            strncpy(buff, "Manuuuuulick", 12);
+            strncpy(buff, "Ekaterinburg", 12);
         } else if ((int)n == 5) {
-            strncpy(buff, "Ishacheeeeek", 12);
+            strncpy(buff, "Semipalatink", 12);
         }
         for (i = 0; i <= 5; i++) {
             buffer[i] = buff[i];
